@@ -1,4 +1,4 @@
-![Our Logo](https://github.com/KayvT/Reach_PyChatApp/blob/master/LOGO/LogoMakr_92Mx4V.png)
+![Our Logo](https://github.com/asimokby/Desktop-Chat-App-TCP-UDP/blob/master/LOGO/LogoMakr_92Mx4V.png)
 # Reach_PyChatApp
 
 A desktop chat app developed with PyQt. 
@@ -19,6 +19,8 @@ A desktop chat app developed with PyQt.
 ![Our Logo](https://github.com/asimokby/Desktop-Chat-App-TCP-UDP/blob/master/screenshots/soundWindow.png)
 
 ![Our Logo](https://github.com/asimokby/Desktop-Chat-App-TCP-UDP/blob/master/screenshots/chating-fileTransfer.png)
+
+![Our Logo](https://github.com/asimokby/Desktop-Chat-App-TCP-UDP/blob/master/screenshots/packetLoss.png)
 
 
 ### Try it yourself

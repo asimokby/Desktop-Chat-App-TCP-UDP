@@ -32,3 +32,11 @@ A desktop chat app developed with PyQt.
  * write your name, the ip address you want to connect to, default is local host 127.0.0.1 and the dfeault port is 5000
  * then click connect and voila! Start chatting!
  
+ 
+  ### Authors: 
+ 
+- Asim Okby
+- Khaled Yassen
+
+
+##### Thank you!

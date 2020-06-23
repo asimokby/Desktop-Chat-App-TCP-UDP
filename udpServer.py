@@ -1,9 +1,7 @@
 
 import socket
 import time
-# localIP = "10.52.3.25"
 localIP = "127.0.0.1"
-# localIP = '25.135.227.60'
 localPort   = 20001
 bufferSize  = 1000
 
@@ -40,8 +38,7 @@ def sendToClients(typeOfMessage, address, message, clients):
                 UDPServerSocket.sendto(message.encode('utf-8'), c)
             elif typeOfMessage == 'fileData':
                 UDPServerSocket.sendto('$fileData$'.encode('utf-8'), c)
-                #skipping the first packet
-                for seq, pk in message[1:]:
+                for seq, pk in message:
                     UDPServerSocket.sendto(seq, c)
                     time.sleep(.5)
                     UDPServerSocket.sendto(pk, c)
@@ -88,11 +85,7 @@ while(True):
             packets.append((seq_num[0], data[0]))
             seq_num = UDPServerSocket.recvfrom(50)
             data = UDPServerSocket.recvfrom(1000)
-        
-        # to test if the order is changed 
-        x = list(reversed(packets))
-        x.append((seq_num[0], '$#end^$'.encode('utf-8')))
 
         packets.append((seq_num[0], '$#end^$'.encode('utf-8')))
-        sendToClients('fileData', address, x, clients)
+        sendToClients('fileData', address, packets, clients)
 
